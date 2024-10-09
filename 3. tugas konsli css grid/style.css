@@ -1,0 +1,117 @@
+.container{
+    width: 95%;
+    margin: 50px auto;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-row: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "main main main main dwon dwon"
+    "lm lm tp tp vchr vchr" 
+    "flsh flsh flsh flsh flsh flsh"
+    "br1 br2 br3 br4 br5 br6"
+
+
+    ;
+    border: 10px solid;
+    background-color: rgb(0, 0, 0);
+    gap: 10px;
+   
+}
+
+.container > div {
+    background-color: rgba(147, 228, 190, 0.8);
+    text-align: center;
+    
+    font-size: 30px;
+  }
+
+
+@media (max-width: 1011px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "nav nav nav nav nav nav"
+    "main main main main dwon dwon"
+    "lm lm tp tp vchr vchr" 
+    "flsh flsh flsh flsh flsh flsh"
+    "br1 br2 br3 br4 br5 br6"
+        ;
+    }
+}
+
+
+
+.t {
+    padding: 100px auto;
+    height: 100px;
+    text-align: center;
+
+}
+ 
+
+
+.t.nav {
+    background-color: brown;
+    grid-area: nav;
+    padding: 20px;
+    
+}
+.t.main {
+    background-color: chocolate;
+    grid-area: main;
+    padding: 100px 0;
+}
+.t.ml{
+    background-color: rgb(188, 30, 194);
+    grid-area: lm;
+    padding: 10px;
+}
+
+.t.dwon{
+    background-color: rgb(106, 48, 172);
+    grid-area: dwon;
+    padding: 100px 0;
+}
+
+.t.tp{
+    background-color: rgb(188, 30, 194);
+    grid-area: tp;
+    padding: 10px;
+}
+
+.t.vchr{
+    background-color: rgb(188, 30, 194);
+    grid-area: vchr;
+    padding: 10px;
+}
+
+
+.brg1{
+    grid-area: br1;
+}
+
+.brg2{
+    grid-area: br2;
+}.brg3{
+    grid-area: br3;
+}.brg4{
+    grid-area: br4;
+}.brg5{
+    grid-area: br5;
+}
+.brg6{
+    grid-area: br6;
+}
+
+
+.t.flsh{
+    background-color: rgb(231, 98, 9);
+    grid-area: flsh;
+    padding: 5px;
+}
+
+
+
