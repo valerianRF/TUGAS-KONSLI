@@ -1,0 +1,21 @@
+
+
+
+
+1.Inisialisasi Array:
+	let kdavalo = []: Mendeklarasikan dan menginisialisasi sebuah array kosong yang akan digunakan untuk menyimpan data.
+
+2.Input Data:
+	let data = prompt("masukan jumlah data yang ingin dimasukan"): Menggunakan prompt untuk meminta pengguna memasukkan jumlah data yang ingin dimasukkan. Nilai ini disimpan dalam variabel data.
+3.Looping:
+	for (let i = 0; i < data; i++): Menggunakan loop for untuk mengulangi proses sejumlah data kali. Ini adalah contoh dari algoritma iterasi.
+	Mengumpulkan Data Pengguna:
+
+	Di dalam loop, val = prompt("masukan username valo-" + (i + 1) + ":") dan kda = parseInt(prompt("masukan kda-" + (val) + ":")) digunakan untuk mengumpulkan input dari pengguna. val menyimpan username dan kda menyimpan nilai KDA yang diubah menjadi integer menggunakan parseInt.
+	Menambah Data ke Array:
+
+	kdavalo.push({username: val, kda: kda}): Menambahkan objek yang berisi username dan KDA ke dalam array kdavalo.
+
+4.Menampilkan Hasil:
+
+	console.table(kdavalo): Menggunakan console.table untuk menampilkan isi array kdavalo dalam format tabel di konsol. Ini mempermudah visualisasi data yang telah dikumpulkan.

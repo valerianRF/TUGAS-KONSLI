@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //membuat array
+    let kdavalo = []
+    //membuat variable untuk dimasukan ke array
+    let val
+    let kda
+    //menentukan jumlah data ynag ingin di masukan
+    let data = prompt("masukan jumlah data yang ingin dimasukan")
+
+    //perulangan
+    for (let i = 0 ;i < data; i++){
+        //memasukan username yang ingin dimasukan
+         val = prompt("masukan username valo-" + (i + 1) + ":")
+        //memasukan kda yang ingin di masukan
+         kda = parseInt(prompt("masukan kda-" + (val) + ":"))
+        //memasukan data ke array
+        kdavalo.push({username: val, kda: kda})
+    }
+
+    //menampilkan hasil
+    console.table(kdavalo)
+   
+
+    </script>
+</body>
+</html>

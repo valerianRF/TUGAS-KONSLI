@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let suhu = parseInt(prompt(`
+        silahkan pilih suhu
+        1. Celcius
+        2. Kelvin
+        3. fareheit
+        4. reamur
+        `))
+
+    if(suhu == 1){
+        function celcius(c, k, f, r) {
+       c = parseInt(prompt("masukan suhu celcius"))
+       k = c + 273.15 + "-kelvin"
+       f = c * 9/5 + 32 + "-farenheit"
+       r = c * 4/5 + "-reamur"
+
+       console.log(k, f, r)
+    } celcius()
+    }
+
+    else if(suhu == 2){
+        function kelvin(k1, c1, f1, r1) {
+       k1 = parseInt(prompt("masukan suhu Kelvin"))
+       c1 = k1 - 273 + "-celcius"
+       f1 = (k1 - 273.15) * 9/5 + 32 + "-farenheit"
+       r1 = k1 * 4/5 - 273 + "-reamur"
+
+       console.log(c1, f1, r1)
+    } kelvin()
+    }
+
+    else if(suhu == 3){
+        function far(c, k, f, r) {
+       f = parseInt(prompt("masukan suhu Farenheit"))
+       k = (f - 32) * 5/9 + 273.15   + "-kelvin"
+       c = (f - 32) * 5/9 + "-celcius"
+       r = (f -32) * 4/9 + "-reamur"
+
+       console.log(k, c, r)
+    } far()
+    }
+
+    else if(suhu == 4){
+        function reamur(c, k, f, r) {
+       r = parseInt(prompt("masukan suhu Reamur"))
+       k = r * 5/4 + 273.15 + "-kelvin"
+       f = r * 9/4 + 32 + "-farenheit"
+       c = r * 5/4 + "-celcicus"
+
+       console.log(k, f, c)
+    } reamur()
+    }
+    else{
+        console.log("masukan data yang valid")
+    }
+    </script>
+</body>
+</html>
