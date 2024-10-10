@@ -1,0 +1,160 @@
+body{
+  background-color: rgb(175, 198, 241);
+  margin: 0px;
+}
+
+header {
+    background-color: #4A306D;
+    color: #fff;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    
+  }
+  nav ul a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  section {
+    margin: 40px 80px;
+  }
+  
+  #introduction {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #D3BCCC;
+    padding-bottom: 24px;
+  }
+  
+  #introduction img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  #introduction h2 {
+    font-size: 48px;
+  }
+
+
+
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+  }
+
+  #portofolio img{
+  
+    border-color: #4A306D;
+    border-style: solid;
+
+    width: 250px;
+    height: 250px;
+  }
+
+  form{
+    display: grid;
+    grid-column: auto;
+    gap: 10px;
+  }
+
+ 
+  .kirim{
+    display: grid;
+    background-color: #22bd8e;
+    border-style: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    border-radius: 30px;
+  }
+
+.bor{
+  border-radius: 30px;
+  border-style: solid;
+  border-color: blue;
+ 
+  
+}
+
+
+
+
+footer{
+  display: grid;
+  background-color: #4A306D;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header {
+      padding: 10px 50px;
+  }
+
+  #introduction {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 40px;
+  }
+
+  #introduction img {
+      width: 200px;
+      height: 200px;
+  }
+
+  .project-container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 20px 40px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 5px 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul li a {
+      justify-content: center;
+      align-items: center;
+  }
+
+  #introduction {
+      padding: 5px;
+  }
+
+  .project-container {
+      grid-template-columns: 1fr;
+      padding: 5px;
+  }
+
+  section {
+      padding: 20px;
+  }
+
+  footer {
+      padding: 15px;
+  }
+}
